@@ -1,0 +1,23 @@
+:root { 
+  --bg: #f5f6fa; 
+  --white: #ffffff; 
+  --blue: #1240e4; 
+  --red: #ff5858; 
+  --green: #30c75a; 
+  --blue-dark: #0e172c; 
+  --grey-ligth: #d6d6d6; 
+  --grey-dark: #888888; 
+  --h1: 700 1.625rem/2rem Inter; 
+  --subtitle: 700 1.25rem/1.5rem Inter; 
+  --body1-regular: 400 1rem/1.5rem Inter; 
+  --body1-bold: 700 1rem/1.5rem Inter;     
+}
+
+body {
+  font: var(--h1);
+  color: var(--green);
+  background-color: var(--white);
+}
+
+
+
