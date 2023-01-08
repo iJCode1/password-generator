@@ -1,0 +1,19 @@
+.generator-button{
+  display: inline-block;
+  inline-size: 100%;
+  background-color: var(--blue);
+  font: var(--body1-bold);
+  color: var(--white);
+  border: none;
+  padding-block: .75rem;
+  cursor: pointer;
+  transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.generator-button:hover{
+  opacity: .75;
+}
+
+.generator-button:active{
+  transform: scale(.9);
+}

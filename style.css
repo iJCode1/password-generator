@@ -1,3 +1,7 @@
+@import './css/generator.css';
+@import './css/button.css';
+@import './css/alert.css';
+
 :root { 
   --bg: #f5f6fa; 
   --white: #ffffff; 
@@ -14,10 +18,35 @@
 }
 
 body {
-  font: var(--h1);
-  color: var(--green);
-  background-color: var(--white);
+  font: var(--body1-regular);
+  color: var(--blue-dark);
+  background-color: var(--bg);
+  margin: 0;
+  display: grid;
+  align-items: center;
+  min-block-size: 100vh;
 }
 
+.generator-range{
+  margin: 0;
+  inline-size: 100%;
+}
 
+input[type=range] {
+  -webkit-appearance: none;
+  background-image: linear-gradient(var(--blue), var(--blue));
+  background: var(--bg);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  block-size: .7rem;
+}
 
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  block-size: 1.5rem;
+  inline-size: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--blue);
+  cursor: pointer;
+  margin-top: -.10rem; /* hay que darle valor negativo, solo a este navegador */
+}
