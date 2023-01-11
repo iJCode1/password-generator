@@ -10,7 +10,7 @@
     <meta property="og:url" content="https://password-generator-ijcode1.vercel.app/"/>
     <meta property="og:image" content="https://raw.githubusercontent.com/iJCode1/password-generator/main/public/assets/images/Thumbnail-GeneradorDe%20contrasenia.jpg"/>
     <meta property="og:description" content="Generador de contraseñas | Proyecto de Leonidasesteban.com"/>
-    <meta name="robots" content="noindex">
+    <meta name="Googlebot" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
     <main class="generator">
       <h1 class="generator-title">Generador de contraseña</h1>
       <div class="generator-copy">
-        <input type="text" class="copy-text">
+        <input aria-label="password" type="text" class="copy-text" id="copy-text" disabled>
         <i class="copy-icon"></i>
       </div>
       <div class="generator-length">
@@ -29,7 +29,7 @@
           <p class="generator-subtitle">Longitud de cáracter</p>
           <span class="generator-number">0</span>
         </div>
-        <input type="range" class="generator-range" id="generator-range" min="0" max="30" value="0" step="1">
+        <input aria-label="Length" type="range" class="generator-range" id="generator-range" min="0" max="30" value="0" step="1">
       </div>
       <div class="generator-checks">
         <div class="generator-check">
