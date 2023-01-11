@@ -13,6 +13,10 @@
   overflow: hidden;
 }
 
+.alert-copy.is-error{
+  border: 1px solid var(--red);
+}
+
 .alert-copy.is-inactive{
   display: none;
 }
@@ -25,6 +29,10 @@
   block-size: 100%;
   inset-block-start: 0;
   inset-inline-start: 0;
+}
+
+.alert-copy.is-error::before{
+  background-color: var(--red);
 }
 
 .alert-icon{

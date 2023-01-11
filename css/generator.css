@@ -23,10 +23,16 @@
   justify-content: space-between;
   background-color: var(--bg);
   padding: 1rem;
+  gap: 1rem;
 }
 
 .copy-text{
   margin: 0;
+  background: transparent;
+  border: none;
+  font: var(--body1-regular);
+  outline: none;
+  inline-size: 100%;
 }
 
 .copy-icon{
@@ -36,6 +42,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+.copy-icon:active{
+  transform: scale(.8);
 }
 
 .length-text{
@@ -62,6 +74,7 @@
 .generator-check{
   display: flex;
   gap: .75rem;
+  inline-size: max-content;
 }
 
 .generator-checkbox{
@@ -70,6 +83,10 @@
   background-image: url('../assets/icons/square.svg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.generator-checkbox.isSelected{
+  background-image: url('../assets/icons/check-square.svg');
 }
 
 .generator-security{

@@ -14,7 +14,7 @@
     <main class="generator">
       <h1 class="generator-title">Generador de contraseña</h1>
       <div class="generator-copy">
-        <p class="copy-text"></p>
+        <input type="text" class="copy-text">
         <i class="copy-icon"></i>
       </div>
       <div class="generator-length">
@@ -26,19 +26,19 @@
       </div>
       <div class="generator-checks">
         <div class="generator-check">
-          <i id="generator-capital" class="generator-checkbox"></i>
+          <i id="generator-capital" class="generator-checkbox" data-check="capital"></i>
           <label for="generator-capital">Incluye letras mayúsculas.</label>
         </div>
         <div class="generator-check">
-          <i id="generator-lower" class="generator-checkbox"></i>
+          <i id="generator-lower" class="generator-checkbox" data-check="lowercase"></i>
           <label for="generator-lower">Incluye letras minúsculas.</label>
         </div>
         <div class="generator-check">
-          <i id="generator-numbers" class="generator-checkbox"></i>
+          <i id="generator-numbers" class="generator-checkbox" data-check="numbers"></i>
           <label for="generator-numbers">Incluye números.</label>
         </div>
         <div class="generator-check">
-          <i id="generator-symbols" class="generator-checkbox"></i>
+          <i id="generator-symbols" class="generator-checkbox" data-check="symbols"></i>
           <label for="generator-symbols">Incluye símbolos.</label>
         </div>
       </div>
@@ -52,6 +52,6 @@
       <i class="alert-icon"></i>
       <p class="alert-paragraph">Contraseña copiada al portapapeles.</p>
     </div>
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
