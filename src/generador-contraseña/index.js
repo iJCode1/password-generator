@@ -46,9 +46,9 @@ $copy_icon.addEventListener("click", () => {
   if (!$copy_text.value) {
     createHTMLAlert("No se ha generado una contraseña que copiar");
   }
-
   $copy_text.select();
-  document.execCommand("copy");
+  $copy_text.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText($copy_text.value);
 
   if ($alert.classList.contains("is-inactive")) {
     $alert.classList.remove("is-inactive");
